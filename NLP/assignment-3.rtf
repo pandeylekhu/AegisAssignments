@@ -1,0 +1,65 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19680\viewh12800\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\
+Design sentiment analyzer for movie reviews and twitter dataset and report f-score or accuracy.\
+\
+Dataset:\
+1. movie_review dataset (from nltk.corpus import movie_reviews)(Train: 70% Test: 30%)\
+2. twitter dataset (from nltk.corpus import twitter_samples)(Train: 70% Test:30%)  \
+ \
+Feature Engineering:\
+* Use tokenizer, Lemmatizer, Stemmer, Pos tagger (Noun/Adjectives/..), pre-processing of special characters, normalization if needed\
+* Convert each record into feature-vector as taught in the class and mentioned in the demo file or use any other technique which you know \
+* Compare the results with VADER python library for Sentiment Analysis ({\field{\*\fldinst{HYPERLINK "http://www.nltk.org/howto/sentiment.html"}}{\fldrslt 
+\f1 \cf3 \ul \ulc3 http://www.nltk.org/howto/sentiment.html}})\
+* Report the accuracy for classifiers (Naive Bayes, SVM, Decision tree, Logistic Regression)\
+* Find the best features in order to get good accuracy \
+\
+Expected output:\
+\
+\
+#movie review data  \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+features           Feature-weight               NB    SVM   DT   LR\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Unigram             one-hot (0/1)                ?     ?    ?     ?\
+Unigram             Frequency                    ?     ?    ?     ?\
+Unigram             TD-IDF\
+Bigram              one-hot (0/1)                ?     ?    ?     ?\
+Top 1000 unigrams   one-hot (0/1)                ?     ?    ?     ?\
+Unigram + bigram    one-hot (0/1)                ?     ?    ?     ?\
+Only Adjectives     one-hot (0/1)                ?     ?    ?     ?\
+Noun + Adjectives   one-hot (0/1)                ?     ?    ?     ?\
+.\
+.\
+.\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+#twitter data \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+features           Feature-weight               NB    SVM   DT   LR\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Unigram             one-hot (0/1)                ?     ?    ?     ?\
+Unigram             Frequency                    ?     ?    ?     ?\
+Unigram             TD-IDF\
+Bigram              one-hot (0/1)                ?     ?    ?     ?\
+Top 1000 unigrams   one-hot (0/1)                ?     ?    ?     ?\
+Unigram + bigram    one-hot (0/1)                ?     ?    ?     ?\
+Only Adjectives     one-hot (0/1)                ?     ?    ?     ?\
+Noun + Adjectives   one-hot (0/1)                ?     ?    ?     ?\
+.\
+.\
+.\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\
+}
